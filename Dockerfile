@@ -14,7 +14,7 @@ RUN npm install && npm install -g browser-sync
 COPY . .
 
 # Stage 2: Development Stage.
-FROM alpine:latest
+FROM alpine:3.21.3
 
 # Install yarn in the final image required to run the application.
 RUN apk add --no-cache yarn
